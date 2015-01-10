@@ -1,0 +1,19 @@
+body
+{
+	padding-top: 80px;
+}
+
+.main
+{
+	background: white;
+	padding: 20px 40px;
+	-webkit-border-radius: 10px;
+	-webkit-border-top-right-radius: 1px;
+	-webkit-border-bottom-left-radius: 1px;
+	-moz-border-radius: 10px;
+	-moz-border-radius-topright: 1px;
+	-moz-border-radius-bottomleft: 1px;
+	border-radius: 10px;
+	border-top-right-radius: 1px;
+	border-bottom-left-radius: 1px;		
+}
