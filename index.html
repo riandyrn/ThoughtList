@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>ThoughtList Awesome!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<style>
+		body
+		{
+			padding-top: 80px;
+		}
+		
+		.main
+		{
+			background: white;
+			padding: 20px 40px;
+			-webkit-border-radius: 10px;
+			-webkit-border-top-right-radius: 1px;
+			-webkit-border-bottom-left-radius: 1px;
+			-moz-border-radius: 10px;
+			-moz-border-radius-topright: 1px;
+			-moz-border-radius-bottomleft: 1px;
+			border-radius: 10px;
+			border-top-right-radius: 1px;
+			border-bottom-left-radius: 1px;		
+		}
+	</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-comment">&nbsp;</span>ThoughtList <small>(riandyrn@gmail.com)</small></a>
+        </div>
+        <!--<div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 main">
+				<h1 class="text-center">ThoughtList Awesome!</h1>
+				<br>
+				<div class="input-group">
+					<input id="input_thought" type="text" class="form-control" placeholder="Put your thought here...">
+					<span class="input-group-btn">
+						<button id="btn_add" class="btn btn-default" type="button">Add!</button>
+					</span>
+				</div><!-- /input-group -->
+				<br>
+				<h4>Your thought so far:</h4>
+				<ul id="thought_list">
+					<li><a href="#">I'm cool</a></li>
+					<li><a href="#">I'm awesome</a></li>
+					<li><a href="#">Pure awesomeness never die</a></li>
+				</ul>
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+
+		<div class="modal fade" id="modal_confirm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-sm">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Choose Action</h4>
+			  </div>
+			  <div class="modal-body">
+				Choose your action from option below
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" id="btn_edit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Edit</button>
+				<button type="button" id="btn_delete" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span>&nbsp;Delete</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="modal fade" id="modal_edit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-sm">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Edit Thought</h4>
+			  </div>
+			  <div class="modal-body">
+				<input type="text" id="edit_text" class="form-control" placeholder="Enter your thought here..">
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="button" id="btn_save" class="btn btn-primary">Save</button>
+			  </div>
+			</div>
+		  </div>
+		</div>		
+		
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="dist/js/jquery-1.11.2.min.js"></script>
+    <script src="dist/js/jquery.backstretch.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/main.js"></script>
+	
+	<script>
+		$.backstretch("dist/img/bg.jpg");
+	</script>
+	
+	<script>
+
+		
+	</script>
+
+</html>
